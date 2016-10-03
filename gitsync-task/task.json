@@ -53,7 +53,7 @@
             "helpMarkDown": "Base directory for searching files."
         }
     ],
-    "instanceNameFormat": "Uploads template to $(account)",
+    "instanceNameFormat": "Sync Git Repo to $(account)",
     "execution": {
         "PowerShell": {
             "target": "$(currentDirectory)\\gitsync.ps1",
