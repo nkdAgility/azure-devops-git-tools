@@ -3,5 +3,5 @@ param(
     [string] $GitRepoUrl
 )
 
-git pull $GitRepoUrl $(Build.SourceBranchName) --tags
-git push $GitRepoUrl  $(Build.SourceBranchName) --tags
+git pull $GitRepoUrl $env:Build_SourceBranchName --tags
+git push $GitRepoUrl $env:Build_SourceBranchName --tags
