@@ -18,11 +18,6 @@
     "minimumAgentVersion": "1.92.0",
     "groups": [
         {
-            "name": "missing",
-            "displayName": "Missing variables",
-            "isExpanded": true
-        },
-        {
             "name": "advanced",
             "displayName": "Advanced",
             "isExpanded": false
@@ -30,27 +25,12 @@
     ],
     "inputs": [
         {
-            "name": "account",
+            "name": "GitRepoUrl",
             "type": "string",
-            "label": "VSTS Account",
-            "defaultValue": "https://privatepreview.visualstudio.com/",
+            "label": "Git Repository URL",
+            "defaultValue": "https://:$(securityToken)@youraccount.visualstudio.com/_git/your-git-repo",
             "required": true,
-            "helpMarkDown": "The URL of the VSTS instance to deploy the Template to"
-        },
-        {
-            "name": "accesstoken",
-            "type": "string",
-            "label": "Access Token",
-            "required": true,
-            "helpMarkDown": "Personal access token for that instance of VSTS"
-        },
-        {
-            "name": "rootDirectory",
-            "type": "filePath",
-            "label": "Root directory",
-            "defaultValue": "$(System.DefaultWorkingDirectory)\\*.zip",
-            "required": true,
-            "helpMarkDown": "Base directory for searching files."
+            "helpMarkDown": "Enter the full URL of the Git repo that you want to connect to including any authentication."
         }
     ],
     "instanceNameFormat": "Sync Git Repo to $(account)",
