@@ -1,0 +1,64 @@
+{
+    "id": "A8515EC8-7254-4FFD-912C-86772E2B5962",
+    "name": "gitsync",
+    "friendlyName": "Git Sync",
+    "description": "Sync's one Git repository with another",
+    "helpMarkDown": "[More Information](https://github.com/nkdAgility/vsts-gitsync-task#readme)",
+    "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "Martin Hinshelwood",
+    "version": {
+        "Major": #{GitVersion.Major}#,
+        "Minor": #{GitVersion.Minor}#,
+        "Patch": #{GitVersion.Patch}#
+    },
+    "minimumAgentVersion": "1.92.0",
+    "groups": [
+        {
+            "name": "missing",
+            "displayName": "Missing variables",
+            "isExpanded": true
+        },
+        {
+            "name": "advanced",
+            "displayName": "Advanced",
+            "isExpanded": false
+        }
+    ],
+    "inputs": [
+        {
+            "name": "account",
+            "type": "string",
+            "label": "VSTS Account",
+            "defaultValue": "https://privatepreview.visualstudio.com/",
+            "required": true,
+            "helpMarkDown": "The URL of the VSTS instance to deploy the Template to"
+        },
+        {
+            "name": "accesstoken",
+            "type": "string",
+            "label": "Access Token",
+            "required": true,
+            "helpMarkDown": "Personal access token for that instance of VSTS"
+        },
+        {
+            "name": "rootDirectory",
+            "type": "filePath",
+            "label": "Root directory",
+            "defaultValue": "$(System.DefaultWorkingDirectory)\\*.zip",
+            "required": true,
+            "helpMarkDown": "Base directory for searching files."
+        }
+    ],
+    "instanceNameFormat": "Uploads template to $(account)",
+    "execution": {
+        "PowerShell": {
+            "target": "$(currentDirectory)\\gitsync.ps1",
+            "argumentFormat": "",
+            "workingDirectory": "$(System.DefaultWorkingDirectory)"
+        }
+    }
+}
