@@ -20,7 +20,7 @@ git pull target $Env:Build_SourceBranchName --tags
 ## Push stuff
 Write-VstsTaskVerbose ">>git push target --all"
 git push target --all
-Write-VstsTaskVerbose "??git push target HEAD:$Env:Build_SourceBranchName --tags"
+Write-VstsTaskVerbose ">>git push target HEAD:$Env:Build_SourceBranchName --tags"
 git push target HEAD:$Env:Build_SourceBranchName --tags
 
 #git pull --all
