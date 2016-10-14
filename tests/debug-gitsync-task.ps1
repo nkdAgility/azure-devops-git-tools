@@ -10,5 +10,6 @@ Import-Module .\gitsync-task\ps_modules\posh-git
 Get-GitStatus
 Get-GitDirectory
 #Update-AllBranches
+Write-Prompt -
 
 Invoke-VstsTaskScript -ScriptBlock ([scriptblock]::Create('. ..\gitsync-task\gitsync.ps1')) -Verbose
