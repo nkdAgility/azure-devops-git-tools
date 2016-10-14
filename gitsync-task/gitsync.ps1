@@ -6,9 +6,9 @@ param(
 $GitRepoUrl = Get-VstsInput -Name GitRepoUrl -Require 
 Write-VstsTaskVerbose "GitRepoUrl: $GitRepoUrl" 
 
+Set-Location $Env:BUILD_SOURCESDIRECTORY
 
 git remote add target $GitRepoUrl
-
 git pull target $Env:Build_SourceBranchName --tags
 git push target --all
 git push target HEAD:$Env:Build_SourceBranchName --tags
