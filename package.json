@@ -1,12 +1,12 @@
 {
-  "name": "nkdAgility.vsts-git-sync-tasks",
+  "name": "nkdAgility.vsts-git-tasks",
   "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
   "description": "Build and release tasks for passing build veriables to a release. ",
   "author": "Martin Hinshelwood",
   "license": "MIT",
-  "homepage": "https://github.com/nkdAgility/vsts-git-sync-tasks#readme",
+  "homepage": "https://github.com/nkdAgility/vsts-git-tasks#readme",
   "bugs": {
-    "url": "https://github.com/nkdAgility/vsts-git-sync-tasks/issues"
+    "url": "https://github.com/nkdAgility/vsts-git-tasks/issues"
   },
   "keywords": [
      "release",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nkdAgility/vsts-git-sync-tasks.git"
+    "url": "git+https://github.com/nkdAgility/vsts-git-tasks.git"
   },
   "devDependencies": {
     "del": "^2.0.0",

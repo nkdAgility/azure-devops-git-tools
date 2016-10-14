@@ -1,4 +1,4 @@
-# Git Sync Tasks
+# Git Tasks
 
 Visual Studio Team Services Build and Release Management extension that helps you synchronise one Git Repository with another. 
 
@@ -6,7 +6,7 @@ Learn more about this extension on the wiki!
 
 ##Tasks included
 
-- **Git Sync Task** - Full synchronisation of the local git repo with a repository of choice. Syncs Branches & Tags.
+- **Git Publish Task** - Publish your Branches & Tags to an external Git Repository. Support any Git repo accessable with a URL.
 
 ##Steps
 

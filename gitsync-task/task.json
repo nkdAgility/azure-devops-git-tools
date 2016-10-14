@@ -1,12 +1,13 @@
 {
     "id": "36cbb8f8-6f18-4b55-bdd7-3ecf87044b08",
     "name": "gitsync",
-    "friendlyName": "Git Sync Task",
+    "friendlyName": "Git Publish Task",
     "description": "Lets you Sync your Git repository with another",
     "helpMarkDown": "v#{GitVersion.FullSemVer}# [More Information](https://github.com/nkdAgility/vsts-gitsync-tasks#readme)",
     "category": "Utility",
     "visibility": [
-        "Build"
+        "Build",
+        "Release"
     ],
     "author": "Martin Hinshelwood",
     "version": {
@@ -24,7 +25,7 @@
             "helpMarkDown": "Enter the fully qualified and authenticated Git Repo URL. e.g. https://$(githubpersonaltoken)@github.com/nkdAgility/vsts-gitsync-tasks.git"
         }
     ],
-    "instanceNameFormat": "Git Sync to $(GitRepoUrl)",
+    "instanceNameFormat": "Git Publish to $(GitRepoUrl)",
     "execution": {
         "PowerShell3": {
             "target": "$(currentDirectory)\\gitsync.ps1",
