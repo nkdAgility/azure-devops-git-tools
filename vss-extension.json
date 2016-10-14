@@ -1,33 +1,36 @@
 {
     "manifestVersion": 1,
-    "id": "gitsync",
-    "name": "Git Sync",
+    "id": "gitsync#{GitVersion.PreReleaseLabel}#",
+    "name": "Git Sync Tasks #{GitVersion.PreReleaseLabel}#",
     "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
     "public": false,
     "publisher": "nkdAgility",
+    "galleryFlags": [
+        "#{Extension.galleryFlags}#"
+    ],
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
     ],    
-    "description": "Task to sync Git Repositories.",
+    "description": "Do you want to OpenSource your VSTS Git Repo, or just sync your VSTS Git repo with another? These build and release tasks will help you manage this. Supports any Git Repo including GitHub.",
     "categories": [
         "Build and release"
     ],
     "tags": [
         "release",
         "build",
-        "token",
-        "replace",
-        "variable",
-        "substitution"
+        "git",
+        "sync",
+        "synchronisation",
+        "GitHub"
     ],
     "links": {
         "learn": {
-            "uri": "https://github.com/nkdAgility/vsts-gitsync-task#readme"
+            "uri": "http://vsts-git-sync-tasks.readthedocs.io"
         },
         "support": {
-            "uri": "https://github.com/nkdAgility/vsts-gitsync-task/issues"  
+            "uri": "https://github.com/nkdAgility/vsts-git-sync-tasks/issues"  
         }
     },
     "icons": {
@@ -54,6 +57,7 @@
         {
             "path": "gitsync-task"
         }
+
     ],
     "contributions": [
         {

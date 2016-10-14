@@ -1,25 +1,24 @@
 {
-  "name": "nkdAgility.vsts-gitsync-task",
+  "name": "nkdAgility.vsts-git-sync-tasks",
   "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
-  "description": "Build task for VS Team Services that can sync Git repositories.",
+  "description": "Build and release tasks for passing build veriables to a release. ",
   "author": "Martin Hinshelwood",
   "license": "MIT",
-  "homepage": "https://github.com/nkdAgility/vsts-gitsync-task#readme",
+  "homepage": "https://github.com/nkdAgility/vsts-git-sync-tasks#readme",
   "bugs": {
-    "url": "https://github.com/nkdAgility/vsts-gitsync-task/issues"
+    "url": "https://github.com/nkdAgility/vsts-git-sync-tasks/issues"
   },
   "keywords": [
-    "VSTS",
-    "release",
-    "build",
-    "token",
-    "replace",
-    "variable",
-    "substitution"
+     "release",
+     "build",
+     "git",
+        "sync",
+        "synchronisation",
+        "GitHub"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nkdAgility/vsts-gitsync-task.git"
+    "url": "git+https://github.com/nkdAgility/vsts-git-sync-tasks.git"
   },
   "devDependencies": {
     "del": "^2.0.0",

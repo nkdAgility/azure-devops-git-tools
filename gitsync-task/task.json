@@ -1,13 +1,12 @@
 {
-    "id": "#{GitSync.Guid}#",
+    "id": "d3e35e68-73f4-4308-9655-818e001a2e31",
     "name": "gitsync",
-    "friendlyName": "Git Sync",
-    "description": "Sync's one Git repository with another",
-    "helpMarkDown": "[More Information](https://github.com/nkdAgility/vsts-gitsync-task#readme)",
+    "friendlyName": "Git Sync Task",
+    "description": "Lets you Sync your Git repository with another",
+    "helpMarkDown": "v#{GitVersion.FullSemVer}# [More Information](https://github.com/nkdAgility/vsts-gitsync-tasks#readme)",
     "category": "Utility",
     "visibility": [
-        "Build",
-        "Release"
+        "Build"
     ],
     "author": "Martin Hinshelwood",
     "version": {
@@ -16,26 +15,18 @@
         "Patch": #{GitVersion.Patch}#
     },
     "minimumAgentVersion": "1.92.0",
-    "groups": [
-        {
-            "name": "advanced",
-            "displayName": "Advanced",
-            "isExpanded": false
-        }
-    ],
     "inputs": [
         {
-            "name": "GitRepoUrl",
+            "name": "authenticatedGitRepo",
             "type": "string",
-            "label": "Git Repository URL",
-            "defaultValue": "https://:$(securityToken)@youraccount.visualstudio.com/_git/your-git-repo",
+            "label": "Git Repo",
             "required": true,
-            "helpMarkDown": "Enter the full URL of the Git repo that you want to connect to including any authentication."
+            "helpMarkDown": "Enter the fully qualified and authenticated Git Repo URL. e.g. https://$(githubpersonaltoken)@github.com/nkdAgility/vsts-gitsync-tasks.git"
         }
     ],
-    "instanceNameFormat": "Sync Git Repo to $(account)",
+    "instanceNameFormat": "Git Sync to $(authenticatedGitRepo)",
     "execution": {
-        "PowerShell": {
+        "PowerShell3": {
             "target": "$(currentDirectory)\\gitsync.ps1",
             "argumentFormat": "",
             "workingDirectory": "$(System.DefaultWorkingDirectory)"

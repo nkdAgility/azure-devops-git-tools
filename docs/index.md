@@ -4,7 +4,7 @@ Version: v#{GitVersion.FullSemVer}#
 
 Visual Studio Team Services Build and Release Management extension that helps you synchronise one Git Repository with another. 
 
-Learn more about this extension on the wiki!
+Get the [Git Sync Management](https://marketplace.visualstudio.com/items?itemName=nkdagility.gitsync) extensions for VSTS from the Marketplace.
 
 ##Tasks included
 
