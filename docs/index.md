@@ -1,6 +1,4 @@
-# Git Sync Tasks #{GitVersion.PreReleaseLabel}#
-
-Version: v#{GitVersion.FullSemVer}#
+# Git Sync Tasks
 
 Visual Studio Team Services Build and Release Management extension that helps you synchronise one Git Repository with another. 
 
