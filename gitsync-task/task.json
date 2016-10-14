@@ -29,7 +29,7 @@
         "PowerShell3": {
             "target": "$(currentDirectory)\\gitsync.ps1",
             "argumentFormat": "",
-            "workingDirectory": "$(System.DefaultWorkingDirectory)"
+            "workingDirectory": "$(Build.SourcesDirectory)"
         }
     }
 }

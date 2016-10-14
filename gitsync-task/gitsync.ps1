@@ -11,7 +11,7 @@ git remote add target $GitRepoUrl
 
 git pull target $Env:Build_SourceBranchName --tags
 git push target --all
-git push target HEAD:$(Build.SourceBranchName) --tags
+git push target HEAD:$Env:Build_SourceBranchName --tags
 
 #git pull --all
 #git pull target $env:Build_SourceBranchName --tags
