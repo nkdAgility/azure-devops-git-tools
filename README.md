@@ -2,7 +2,7 @@
 
 Visual Studio Team Services Build and Release Management extension that helps you synchronise one Git Repository with another. 
 
-Learn more about this extension on the wiki!
+You can use this extension with any Git repository: TFS, GitHub, Git, etc.
 
 ##Tasks included
 
