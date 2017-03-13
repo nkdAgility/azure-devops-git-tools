@@ -18,13 +18,15 @@
         "Build and release"
     ],
     "tags": [
-        "release",
-        "build",
-        "process",
-        "process template",
-        "template",
-        "upload",
-        "hydrate"
+     "release",
+     "build",
+     "git",
+     "sync",
+     "synch",
+     "synchronisation",
+     "GitHub",
+     "Git Push",
+     "Branch"
     ],
     "links": {
         "learn": {

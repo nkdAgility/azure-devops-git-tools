@@ -13,4 +13,4 @@ Get the [Git Sync Management](https://marketplace.visualstudio.com/items?itemNam
 
 After installing the extension, you can add one (or more) of the tasks to a new or existing build definition or release definition
 
-Full documentation is available on [http://vsts-git-sync.readthedocs.io](http://vsts-git-sync.readthedocs.io)
+Full documentation is available on [http://vsts-git-tasks.readthedocs.io](http://vsts-git-tasks.readthedocs.io)
