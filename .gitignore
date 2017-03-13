@@ -2,3 +2,4 @@ node_modules/
 *.vsix
 _build/
 _packages/
+/.vs/vsts-git-tasks/v15
